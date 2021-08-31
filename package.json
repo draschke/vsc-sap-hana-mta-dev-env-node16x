@@ -1,7 +1,7 @@
 {
-  "name": "vsc-sap-hana-mta-dev-env-node12x",
+  "name": "vsc-sap-hana-mta-dev-env-node16x",
   "version": "1.0.8",
-  "description": "VS Code Dev Container for SAP HANA App development for Node.js 12.x",
+  "description": "VS Code Dev Container for SAP HANA App development for Node.js 16.x",
   "main": "index.js",
   "dependencies": {
     "vitepress": "^0.16.1"
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x.git"
+    "url": "git+https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x.git"
   },
   "keywords": [
     "SAP",
@@ -38,7 +38,7 @@
   "author": "Dirk Raschke",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x/issues"
+    "url": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/issues"
   },
-  "homepage": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x#readme"
+  "homepage": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x#readme"
 }

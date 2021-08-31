@@ -1,4 +1,4 @@
-# Kick off your SAP HANA App Dev Env for running Hana-Cli (XSA & CF) by leverage VS Code Dev Container. Use this [devcontainer](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x/tree/master/.devcontainer) for your projects if you want
+# Kick off your SAP HANA App Dev Env for running Hana-Cli (XSA & CF) by leverage VS Code Dev Container. Use this [devcontainer](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/tree/master/.devcontainer) for your projects if you want
 
 ## Motivation
 
@@ -20,17 +20,17 @@ Drop the unzipped XS_CLIENT00P file on root
 ![XS Client](docs/public/node14.png)  
 Change the path in your .devcontainer\Dockerfile
 
-- (ENV XSCLI="/workspaces/vsc-sap-hana-mta-dev-env-node12x/XS_CLIENT00P_134-70001320)
+- (ENV XSCLI="/workspaces/vsc-sap-hana-mta-dev-env-node16x/XS_CLIENT00P_134-70001320)
 
 Change the permission by running your WSL - Distro with the chmod command.
 
 ```bash
-node ➜ /workspaces/vsc-sap-hana-mta-dev-env-node12x/XS_CLIENT00P_134-70001320/bin (docs ✗)
+node ➜ /workspaces/vsc-sap-hana-mta-dev-env-node16x/XS_CLIENT00P_134-70001320/bin (docs ✗)
 $ chmod -R +x xs
 ```
 
 ```bash
-node ➜ /workspaces/vsc-sap-hana-mta-dev-env-node12x/XS_CLIENT00P_134-70001320/sapjvm_8_jre/ (docs ✗)
+node ➜ /workspaces/vsc-sap-hana-mta-dev-env-node16x/XS_CLIENT00P_134-70001320/sapjvm_8_jre/ (docs ✗)
 $ chmod -R +x bin
 ```
 
@@ -49,7 +49,7 @@ Running project in WSL (Ubuntu)
 \\wsl$\Ubuntu-20.04\home\
 ```
 
-- If you want, use the same Extensions in WSL by running this file [code --install-extension](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x/blob/main/install-extensions.txt)
+- If you want, use the same Extensions in WSL by running this file [code --install-extension](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/blob/main/install-extensions.txt)
 
 ```bash
 code --install-extension "christian-kohler.path-intellisense"
@@ -109,7 +109,7 @@ code --install-extension "christian-kohler.npm-intellisense"
 ### Contributing
 
 - Contribute or provide feedback for this repo
-- Consider to use [Discussions](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node12x/discussions)
+- Consider to use [Discussions](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/discussions)
 - Search existing issues or report a problem
 
 ### License
