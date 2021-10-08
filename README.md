@@ -6,7 +6,8 @@ The approach of this project was to share the same required dev environment by u
 
 ## Prerequisites
 
-- [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/)
+- [Install Docker Desktop on Windows](https://docs.docker.com/docker-for-windows/install/) or [Docker on Windows (WSL) without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
+  - Because the terms of Docker Desktop on Windows have changed, I don't use Docker Desktop anymore.
 
 - [Install this VS Code Containers extension at first](https://code.visualstudio.com/docs/remote/containers-tutorial#_install-the-extension)
 
