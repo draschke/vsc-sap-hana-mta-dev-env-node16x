@@ -7,7 +7,7 @@ let email = "draschke@googlemail.com";
 
 module.exports = {
   lang: "en-US",
-  title: "VS Code Dev Container for SAP HANA App development for Node.js 16.x",
+  title: "VS Code Dev Container for SAP HANA App development",
   description:
     "VS Code Dev Container for SAP HANA App development for Node.js 16.x",
   base: "/vsc-sap-hana-mta-dev-env-node16x/",
