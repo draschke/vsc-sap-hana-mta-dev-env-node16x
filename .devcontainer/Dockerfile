@@ -28,6 +28,9 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
     # To install cf CLI v6, run
     && sudo apt-get -y install cf-cli
 
+# # keytar - Node module to manage system keychain (VSCode keytar)
+RUN sudo apt-get update -y && sudo apt-get -y install libsecret-1-dev
+
 # # Alter node user as needed, install tslint, typescript. eslint is installed by javascript image
 RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
     groupmod --gid $USER_GID $USERNAME \
@@ -39,8 +42,12 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
     && sudo -u ${USERNAME} npm install -g typescript \
     # https://help.sap.com/viewer/17d50220bcd848aa854c9c182d65b699/Latest/en-US/17efa217f7f34a9eba53d7b209ca4280.html#loio5701672c35354d5b91759a911eaf1171
     && sudo -u ${USERNAME} npm set @sap:registry=https://npm.sap.com -g \
+    && sudo -u ${USERNAME} npm update npm -g \
     # Install global node modules for SAP CAP and frontend development.
     && npm config set registry https://registry.npmjs.org/ \
+    # https://stackoverflow.com/questions/57534295/npm-err-tracker-idealtree-already-exists-while-creating-the-docker-image-for    
+    # keytar - Node module to manage system keychain (VSCode keytar)    
+    && sudo -s npm i keytar \    
     && sudo -u ${USERNAME} npm i @sap/cds-dk \
     -g mta \ 
     -g mbt \

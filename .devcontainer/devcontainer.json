@@ -16,8 +16,8 @@
   "settings": {
     "workbench.colorTheme": "codeSTACKr Theme",
     "workbench.iconTheme": "vscode-icons",
-    "terminal.integrated.defaultProfile.osx": "bash",
-    "shellformat.flag": "-i 2 -bn -ci -sr"
+    // "terminal.integrated.defaultProfile.osx": "bash",
+    "shellformat.flag": "-i=2 -bn -ci -sr"
   },
 
   // // Add the IDs of extensions you want installed when the container is created.
