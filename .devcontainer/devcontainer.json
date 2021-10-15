@@ -20,7 +20,7 @@
     "shellformat.flag": "-i=2 -bn -ci -sr"
   },
 
-  // // Add the IDs of extensions you want installed when the container is created.
+  // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "alexcvzz.vscode-sqlite",
     "bengreenier.vscode-node-readme",
@@ -101,7 +101,8 @@
     "waderyan.gitblame",
     "yzhang.markdown-all-in-one",
     "foxundermoon.shell-format",
-    "timonwong.shellcheck"
+    "timonwong.shellcheck",
+    "github.vscode-pull-request-github"
   ],
 
   // Ensure that Docker socket is mapped into the development container

@@ -19,7 +19,8 @@ ENV KUBECONFIG="/usr/local/share/kube-devcontainer/kubeconfig.yml"
 ENV XSCLI="/workspaces/vsc-sap-hana-mta-dev-env-node16x/XS_CLIENT00P_134-70001320"
 ENV PATH=$PATH:${XSCLI}/bin
 ENV npm config set registry https://registry.npmjs.org/
-
+WORKDIR /usr/app
+COPY ./ ./
 # # # Prepare for apt-based install of Cloud Foundry CLI by adding Cloud Foundry Foundation public key & package repository
 # # # (see https://docs.cloudfoundry.org/cf-cli/install-go-cli.html#pkg-linux).
 RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add - ; \
@@ -45,9 +46,13 @@ RUN if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
     && sudo -u ${USERNAME} npm update npm -g \
     # Install global node modules for SAP CAP and frontend development.
     && npm config set registry https://registry.npmjs.org/ \
-    # https://stackoverflow.com/questions/57534295/npm-err-tracker-idealtree-already-exists-while-creating-the-docker-image-for    
+    # //TODO #1 
+    # https://stackoverflow.com/questions/57534295/npm-err-tracker-idealtree-already-exists-while-creating-the-docker-image-for  
+    # solution added
+    # WORKDIR /usr/app
+    # COPY ./ ./  
     # keytar - Node module to manage system keychain (VSCode keytar)    
-    && sudo -s npm i keytar \    
+    && npm i keytar \
     && sudo -u ${USERNAME} npm i @sap/cds-dk \
     -g mta \ 
     -g mbt \
@@ -120,17 +125,11 @@ RUN apt-get update \
     && mkdir --parents ${XSCLI} \
     && chown --recursive ${USERNAME}:${USERNAME} ${XSCLI}
 
-# Set alias for hana-cli -->doesn't work
-# RUN echo -e '#!/bin/bash\n"hana-cli"' > /usr/bin/hc && \
-#     chmod +x /usr/bin/hc
-
-
 # List all Cloud Foundry CLI plugins to see whether the installation worked.
 # cf repo-plugins | grep multiapps
 # cf plugins
 RUN sudo -u ${USERNAME} cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org \
     && sudo -u ${USERNAME} cf install-plugin blue-green-deploy -f -r CF-Community \
-    # && sudo -u ${USERNAME} cf install-plugin -f -r CF-Community multiapps \
     && sudo -u ${USERNAME} cf install-plugin multiapps -f -r CF-Community \
     && sudo -u ${USERNAME} cf install-plugin -f https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux64
 
