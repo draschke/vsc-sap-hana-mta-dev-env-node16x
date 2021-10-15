@@ -102,7 +102,9 @@
     "yzhang.markdown-all-in-one",
     "foxundermoon.shell-format",
     "timonwong.shellcheck",
-    "github.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "saposs.vscode-ui5-language-assistant",
+    "iljapostnovs.ui5plugin"
   ],
 
   // Ensure that Docker socket is mapped into the development container
