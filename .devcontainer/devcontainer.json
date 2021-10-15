@@ -16,7 +16,7 @@
   "settings": {
     "workbench.colorTheme": "codeSTACKr Theme",
     "workbench.iconTheme": "vscode-icons",
-    // "terminal.integrated.defaultProfile.osx": "bash",
+    "editor.formatOnSave",
     "shellformat.flag": "-i=2 -bn -ci -sr"
   },
 
