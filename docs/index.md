@@ -24,8 +24,29 @@ The approach of this project was to share the same required dev environment by u
 
 #### Use WSL (Ubuntu)
 
-Drop the unzipped XS_CLIENT00P file on root  
-![XS Client](./config/images/node14.png)  
+Activate additional features at the end of the [Dockerfile](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/blob/main/.devcontainer/Dockerfile)
+
+To increase the startup time for this devcontainer, I have some features (docker, kubectl, etc.) outsourced in a separately bash script.
+If you need one of this features, you only need to comment or uncomment the relevant script.
+
+![Additional features](./config/images/additional-features.png)
+
+Activate this additional VS Code extensions within [devcontainer](https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/blob/main/.devcontainer/devcontainer.json)
+
+```json
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+```
+
+#### XS_Client
+
+Drop the unzipped XS_CLIENT00P file on root
+
+![XS Client](./config/images/node14.png)
+
 Change the path in your .devcontainer\Dockerfile
 
 - (ENV XSCLI="/workspaces/vsc-sap-hana-mta-dev-env-node16x/XS_CLIENT00P_134-70001320)
