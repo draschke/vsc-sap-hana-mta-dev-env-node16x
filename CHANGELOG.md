@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Nothing yet!
 
-## [1.0.15] - 2021-10-20
+## [1.0.16] - 2021-10-20
 
 - dockerfile optimized  
 - some features (docker, kubectl, etc.) were outsourced in a separately bash scripts
@@ -19,5 +19,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Init - Added Everything!
 
 [Unreleased]: https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/compare/v1.0.1...HEAD
-[1.0.9]: https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/compare/v1.0.13...v1.0.15
+[1.0.16]: https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/compare/v1.0.13...v1.0.16
 [1.0.9]: https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x/compare/v1.0.0...v1.0.9
