@@ -22,6 +22,9 @@ tutorial
 devtoberfest-2021
 bookshop
 my.db
+dr-cf-build-sap-overview-page/test-cf.txt
+deploy.txt
+sapui5-tooling*
 
 # docs/.vitepress
 # docs/index.md
@@ -150,6 +153,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 issues
-
-dr-cf-build-sap-overview-page/test-cf.txt
-deploy.txt
