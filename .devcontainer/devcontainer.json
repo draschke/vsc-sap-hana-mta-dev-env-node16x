@@ -12,7 +12,7 @@
   // ==================================================
   // Windows %APPDATA%\Code\User\settings.json
   "settings": {
-    "workbench.colorTheme": "codeSTACKr Theme",
+    "workbench.colorTheme": "Night Owl",
     "workbench.iconTheme": "vscode-icons",
     "files.eol": "\n",
     "shellformat.flag": "-i=2 -bn -ci -sr",
@@ -78,6 +78,7 @@
     "mtxr.sqltools",
     "mutantdino.resourcemonitor",
     "pflannery.vscode-versionlens",
+    "rangav.vscode-thunder-client",
     "redhat.vscode-commons",
     "redhat.vscode-yaml",
     "sapos.yeoman-ui",
