@@ -94,5 +94,5 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
 # && ./4-helm
 # RUN chmod +x 5-docker \
 # && ./5-docker
-# RUN chmod +x 6-python \
-# && ./6-python
+RUN chmod +x 6-python \
+&& ./6-python
