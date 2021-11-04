@@ -28,24 +28,24 @@ COPY ./ ./
 RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add - ; \
     echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list \
     && sudo apt-get -y update \
-# To install cf CLI v6, run
+    # To install cf CLI v6, run
     && sudo apt-get -y install cf-cli \
-# Keytar - Node module to manage system keychain (VSCode keytar)
+    # Keytar - Node module to manage system keychain (VSCode keytar)
     && sudo apt-get update -y \
     && sudo apt-get -y install libsecret-1-dev \
-# Alter node user as needed, install tslint, typescript. eslint is installed by javascript image
+    # Alter node user as needed, install tslint, typescript. eslint is installed by javascript image
     && if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
     groupmod --gid $USER_GID $USERNAME \
     && usermod --uid $USER_UID --gid $USER_GID $USERNAME \
     && chown -R $USER_UID:$USER_GID /home/$USERNAME; \
     fi \
-# Install tslint, typescript. eslint is installed by javascript image
+    # Install tslint, typescript. eslint is installed by javascript image
     && sudo -u ${USERNAME} npm install -g typescript \
-# https://help.sap.com/viewer/17d50220bcd848aa854c9c182d65b699/Latest/en-US/17efa217f7f34a9eba53d7b209ca4280.html#loio5701672c35354d5b91759a911eaf1171
+    # https://help.sap.com/viewer/17d50220bcd848aa854c9c182d65b699/Latest/en-US/17efa217f7f34a9eba53d7b209ca4280.html#loio5701672c35354d5b91759a911eaf1171
     && sudo -u ${USERNAME} npm set @sap:registry=https://npm.sap.com -g \
-# Install global node modules for SAP CAP and frontend development.
+    # Install global node modules for SAP CAP and frontend development.
     && npm config set registry https://registry.npmjs.org/ \
-# Keytar - Node module to manage system keychain (VSCode keytar)
+    # Keytar - Node module to manage system keychain (VSCode keytar)
     && sudo -s npm i keytar \
     && sudo -u ${USERNAME} npm i @sap/cds-dk \
     -g mta \
@@ -64,19 +64,19 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
     @sap/ux-ui5-fe-mockserver-middleware \
     @sap/hana-client \
     hana-cli \
-# Install extra tools for CAP development & deployment.
+    # Install extra tools for CAP development & deployment.
     && apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     && apt-get -y install sqlite cf-cli \
-# XS CLI for running against HANA XSA
+    # XS CLI for running against HANA XSA
     && apt-get update \
     && apt-get install --yes --no-install-recommends procps unzip \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir --parents ${XSCLI} \
     && chown --recursive ${USERNAME}:${USERNAME} ${XSCLI} \
-# List all Cloud Foundry CLI plugins to see whether the installation worked.
-# cf repo-plugins | grep multiapps
-# cf plugins
+    # List all Cloud Foundry CLI plugins to see whether the installation worked.
+    # cf repo-plugins | grep multiapps
+    # cf plugins
     && sudo -u ${USERNAME} cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org \
     && sudo -u ${USERNAME} cf install-plugin blue-green-deploy -f -r CF-Community \
     && sudo -u ${USERNAME} cf install-plugin multiapps -f -r CF-Community \
@@ -95,4 +95,4 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
 # RUN chmod +x 5-docker \
 # && ./5-docker
 RUN chmod +x 6-python \
-&& ./6-python
+    && ./6-python
