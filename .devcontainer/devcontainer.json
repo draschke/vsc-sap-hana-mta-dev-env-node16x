@@ -71,7 +71,7 @@
     "mindaro-dev.file-downloader",
     "mindaro.mindaro",
     "ms-ceintl.vscode-language-pack-de",
-    "ms-mssql.mssql",
+    // "ms-mssql.mssql",
     "ms-vscode.cpptools",
     "ms-vscode.js-debug-nightly",
     "ms-vscode.test-adapter-converter",
