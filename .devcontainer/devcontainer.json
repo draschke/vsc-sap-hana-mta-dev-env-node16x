@@ -12,6 +12,9 @@
   // ==================================================
   // Windows %APPDATA%\Code\User\settings.json
   "settings": {
+    "dotfiles.repository": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x",
+    "dotfiles.targetPath": "~/.devcontainer",
+    "dotfiles.installCommand": "~/.devcontainer/6-python",
     "workbench.colorTheme": "Night Owl",
     // "workbench.colorTheme": "codeSTACKr Theme",    
     "workbench.iconTheme": "vscode-icons",
