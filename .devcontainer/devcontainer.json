@@ -30,7 +30,7 @@
     "[gitignore]": {
       "editor.defaultFormatter": "codezombiech.gitignore"
     },
-    "[Dockerfile]": {
+    "[dockerfile]": {
       "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     }
   },
