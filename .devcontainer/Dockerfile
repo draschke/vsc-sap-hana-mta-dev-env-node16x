@@ -94,5 +94,6 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
 # && ./4-helm
 # RUN chmod +x dotfiles/5-docker && cd dotfiles \
 # && ./5-docker
-# RUN chmod +x dotfiles/6-python && cd dotfiles \
-# && ./6-python
+RUN chmod +x -R dotfiles \
+    && ./dotfiles/6-python
+
