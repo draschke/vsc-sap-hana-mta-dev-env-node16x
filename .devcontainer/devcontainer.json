@@ -12,9 +12,6 @@
   // ==================================================
   // Windows %APPDATA%\Code\User\settings.json
   "settings": {
-    "dotfiles.repository": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x",
-    "dotfiles.targetPath": "~/.devcontainer",
-    "dotfiles.installCommand": "~/.devcontainer/6-python",
     "workbench.colorTheme": "Night Owl",
     // "workbench.colorTheme": "codeSTACKr Theme",    
     "workbench.iconTheme": "vscode-icons",
@@ -35,7 +32,11 @@
     },
     "[dockerfile]": {
       "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    }
+    },
+    // didn't work 
+    "dotfiles.repository": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x",
+    "dotfiles.targetPath": "~/.devcontainer/dotfiles",
+    "dotfiles.installCommand": "./6-python"
   },
   "extensions": [
     "alexcvzz.vscode-sqlite",
@@ -74,7 +75,6 @@
     "mindaro-dev.file-downloader",
     "mindaro.mindaro",
     "ms-ceintl.vscode-language-pack-de",
-    // "ms-mssql.mssql",
     "ms-vscode.cpptools",
     "ms-vscode.js-debug-nightly",
     "ms-vscode.test-adapter-converter",
@@ -107,22 +107,23 @@
     "vscode-icons-team.vscode-icons",
     "vsls-contrib.codetour",
     "waderyan.gitblame",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "ms-mssql.mssql",    
+    "ms-azuretools.vscode-docker",
     // Activate additional features
     // ===============================
-    "ms-vscode-remote.remote-containers",
-    "ms-vscode-remote.remote-ssh-edit",
-    "ms-vscode-remote.remote-ssh",
-    "ms-vscode-remote.remote-wsl",
-    "ms-vscode-remote.vscode-remote-extensionpack",
-    "ms-kubernetes-tools.vscode-kubernetes-tools",
-    "ipedrazas.kubernetes-snippets",
-    "ms-azuretools.vscode-docker",
+    // "ms-vscode-remote.remote-containers",
+    // "ms-vscode-remote.remote-ssh-edit",
+    // "ms-vscode-remote.remote-ssh",
+    // "ms-vscode-remote.remote-wsl",
+    // "ms-vscode-remote.vscode-remote-extensionpack",
+    // "ms-kubernetes-tools.vscode-kubernetes-tools",
+    // "ipedrazas.kubernetes-snippets",
     // Python
     // ======
-    "ms-python.python",
-    "ms-python.vscode-pylance",
-    "ms-toolsai.jupyter"
+    // "ms-python.python",
+    // "ms-python.vscode-pylance",
+    // "ms-toolsai.jupyter"
     // GitHub Copilot is an AI pair programmer
     // ==========================================
     // "github.copilot"
