@@ -84,16 +84,16 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
 # =========================
 # ADD ADDITIONAL FEATURES
 # =========================
-# RUN chmod +x dotfiles/1-kubectl && cd dotfiles\
+# RUN chmod +x -R scripts/1-kubectl \
 # && ./1-kubectl
-# RUN chmod +x dotfiles/2-kube-devcontainer && cd dotfiles \
+# RUN chmod +x -R scripts/2-kube-devcontainer \
 # && ./2-kube-devcontainer
-# RUN chmod +x dotfiles/3-minikube && cd dotfiles \
+# RUN chmod +x -R scripts/3-minikube \
 # && ./3-minikube
-# RUN chmod +x dotfiles/4-helm && cd dotfiles \
+# RUN chmod +x -R scripts/4-helm \
 # && ./4-helm
-# RUN chmod +x dotfiles/5-docker && cd dotfiles \
+# RUN chmod +x -R scripts/5-docker \
 # && ./5-docker
-RUN chmod +x -R dotfiles \
-    && ./dotfiles/6-python
+RUN chmod +x -R scripts \
+    && ./scripts/6-python
 

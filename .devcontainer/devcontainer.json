@@ -34,9 +34,9 @@
   //     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   //   },
   //   // didn't work 
-  //   "dotfiles.repository": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x",
-  //   "dotfiles.targetPath": "~/.devcontainer/dotfiles",
-  //   "dotfiles.installCommand": "./6-python"
+  //   "scripts.repository": "https://github.com/draschke/vsc-sap-hana-mta-dev-env-node16x",
+  //   "scripts.targetPath": "~/.devcontainer/scripts",
+  //   "scripts.installCommand": "./6-python"
   // },
   // "extensions": [
   //   "alexcvzz.vscode-sqlite",
