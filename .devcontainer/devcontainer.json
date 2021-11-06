@@ -119,10 +119,10 @@
     // ======
     "ms-python.python",
     "ms-python.vscode-pylance",
-    "ms-toolsai.jupyter"
+    "ms-toolsai.jupyter",
     // GitHub Copilot is an AI pair programmer
     // ==========================================
-    // "github.copilot"
+    "github.copilot"
   ],
   // Ensure that Docker socket is mapped into the development container
   "runArgs": [
