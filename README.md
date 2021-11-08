@@ -10,15 +10,23 @@ The approach of this project was to share the same required dev environment by u
   - Because the terms of Docker Desktop have changed, I prefer to use [Docker on Windows (WSL) without Docker Desktop](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9).
 - [Install this VS Code Containers extension at first](https://code.visualstudio.com/docs/remote/containers-tutorial#_install-the-extension)
 
-#### Setting up this Dev Container - use WSL (Ubuntu)
+### Setting up this Dev Container - use WSL (Ubuntu)
 
 Some features (docker, kubectl, etc.) were outsourced in a separately bash script, to increase the startup time for this devcontainer. If you need one of this features, you only need to comment or uncomment the relevant script.
 
-Activate additional features at the end of the [Dockerfile](../../../.devcontainer/Dockerfile).
+Change the permission to executable with the chmod command.
+
+```bash
+node ➜ .../.devcontainer (main ✗) $  (docs ✗)
+$ chmod -R +x
+```
+
+Optional activate additional features at the end of the [Dockerfile](../../../.devcontainer/Dockerfile)
 
 ![Additional features](/docs/config/images/additional-features.png)
 
-[Activate additional VS Code Extensions](../../../.devcontainer/devcontainer.json)
+Optional activate this additional VS Code extensions within
+[devcontainer](../../../.devcontainer/devcontainer.json)
 
 ```json
     "ms-vscode-remote.remote-containers",

@@ -1,0 +1,36 @@
+
+Deployment (Only a new version executes the action)
+
+Step 1. git pull
+=====================
+
+Step 2. Set a log msg
+=====================
+
+Step 3. Commit
+===================
+
+Step 4. Setting the version (increase the version automatically)
+===================
+node ➜ /workspaces/my-SAP-exercises-with-VSCode (master) 
+$ npm version patch
+v1.0.4
+$ npm version minor
+v1.1.0
+$ npm version major
+v2.0.0
+
+  Check the packages 
+  ===================
+  package.json was adjusted automatically 
+    "name": "my-sap-exercises-with-vscode",
+    "version": "1.0.4",
+  Check the tags 
+  ===================
+  $ git tag
+  v1.0.1
+  v1.0.2
+
+Step 5. Push to master 
+=====================
+git push --follow-tags
