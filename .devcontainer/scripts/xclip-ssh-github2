@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Generating a new SSH key and adding it to the ssh-agent
-# https://docs.github.com/en/enterprise/2.17/user/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-# 1. After creating the ssh key, fetch and copy the content of the id_rsa.pub file to your github-clipboard
-# $ cat ~/.ssh/id_rsa.pub
-# 2. And then use this to default your login method to use ssh keys instead of your credentials
-# $ git config --global url.ssh://git@github.com/.insteadOf https://github.com/
-sudo -s apt-get update -y \
-  && sudo -s apt-get install xclip -y
