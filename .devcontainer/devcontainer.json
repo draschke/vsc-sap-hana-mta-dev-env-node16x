@@ -34,6 +34,8 @@
       "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     }
   },
+  // don't shut down the container on exit
+  "shutdownAction": "none",
   "extensions": [
     "alexcvzz.vscode-sqlite",
     "bengreenier.vscode-node-readme",
@@ -104,7 +106,7 @@
     "vscode-icons-team.vscode-icons",
     "vsls-contrib.codetour",
     "waderyan.gitblame",
-    "wmaurer.change-case",    
+    "wmaurer.change-case",
     "yzhang.markdown-all-in-one",
     "ms-mssql.mssql",
     "ms-azuretools.vscode-docker"
@@ -144,4 +146,4 @@
   // "postCreateCommand": "npm install && npm audit fix && npm install --prefix /workspaces/yourAppName/db && npm install --prefix /workspaces/yourAppName/js && npm start --prefix /workspaces/yourAppName/js && npm audit fix --prefix /workspaces/yourAppName/js && npm install --prefix /workspaces/yourAppName/web &&  npm start --prefix /workspaces/yourAppName/db",
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"
-} 
+}
