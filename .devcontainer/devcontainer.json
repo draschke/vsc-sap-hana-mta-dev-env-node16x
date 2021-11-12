@@ -5,7 +5,8 @@
   "dockerFile": "Dockerfile",
   // \\wsl$\Ubuntu-20.04\home\user\.kube
   "mounts": [
-    "source=${env:HOME}${env:USERPROFILE}/.kube,target=/usr/local/share/kube-devcontainer,type=bind"
+    "source=${env:HOME}${env:USERPROFILE}/.kube,target=/usr/local/share/kube-devcontainer,type=bind",
+    "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/usr/local/share/.ssh,type=bind"
   ],
   // Set *default* container specific settings.json values on container create.
   // The default user settings file is located here:
