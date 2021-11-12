@@ -6,6 +6,7 @@
 # $ cat ~/.ssh/id_rsa.pub
 # 2. And then use this to default your login method to use ssh keys instead of your credentials
 # $ git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+# $ git pull and follow the instructions
 
 sudo -s apt-get update -y \
   && sudo -s apt-get install xclip -y
