@@ -27,7 +27,6 @@
 # set the path
 # ==============
 # sudo vi /etc/ssh/ssh_config
-# IdentityFile /home/node/.ssh/id_rsa.pub
 # IdentityFile /usr/local/share/.ssh/id_rsa.pub
 
 #  if .ssh directory doesn't exist:
