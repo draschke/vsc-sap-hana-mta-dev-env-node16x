@@ -86,6 +86,7 @@
     "rangav.vscode-thunder-client",
     "redhat.vscode-commons",
     "redhat.vscode-yaml",
+    "rogalmic.bash-debug",    
     "sapos.yeoman-ui",
     "saposs.sap-hana-driver-for-sqltools",
     "saposs.vscode-ui5-language-assistant",
