@@ -25,9 +25,9 @@
     "[html]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[sql]": {
-      "editor.defaultFormatter": "mtxr.sqltools"
-    },
+    // "[sql]": {
+    //   "editor.defaultFormatter": "mtxr.sqltools"
+    // },
     "[gitignore]": {
       "editor.defaultFormatter": "codezombiech.gitignore"
     },
@@ -80,14 +80,14 @@
     "ms-vscode.test-adapter-converter",
     "ms-vscode.vscode-github-issue-notebooks",
     "msjsdiag.debugger-for-chrome",
-    "mtxr.sqltools-driver-sqlite",
-    "mtxr.sqltools",
+    // "mtxr.sqltools-driver-sqlite",
+    // "mtxr.sqltools",
     "mutantdino.resourcemonitor",
     "pflannery.vscode-versionlens",
     "rangav.vscode-thunder-client",
     "redhat.vscode-commons",
     "redhat.vscode-yaml",
-    "rogalmic.bash-debug",    
+    "rogalmic.bash-debug",
     "sapos.yeoman-ui",
     "saposs.sap-hana-driver-for-sqltools",
     "saposs.vscode-ui5-language-assistant",
