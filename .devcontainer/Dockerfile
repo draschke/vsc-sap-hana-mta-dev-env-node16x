@@ -94,8 +94,8 @@ RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.k
 #     && ./scripts/4-helm
 # RUN chmod +x -R scripts \
 #     && ./scripts/5-docker
-# RUN chmod +x -R scripts \
-#     && ./scripts/6-python
+RUN chmod +x -R scripts \
+    && ./scripts/6-python
 
 # ===============================================
 # Install xclip for connecting to GitHub with SSH
