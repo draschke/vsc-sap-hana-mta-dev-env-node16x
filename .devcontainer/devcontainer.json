@@ -30,10 +30,10 @@
     // },
     "[gitignore]": {
       "editor.defaultFormatter": "codezombiech.gitignore"
-    },
-    "[dockerfile]": {
-      "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     }
+    // "[dockerfile]": {
+    //   "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    // }
   },
   // don't shut down the container on exit
   "shutdownAction": "none",
